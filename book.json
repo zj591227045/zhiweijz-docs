@@ -16,18 +16,10 @@
     "sharing",
     "fontsettings",
     "highlight",
-    "livereload",
-    "copy-code-button",
-    "expandable-chapters",
-    "anchor-navigation-ex",
     "github",
     "edit-link",
     "prism",
-    "splitter",
-    "tbfed-pagefooter",
-    "popup",
-    "insert-logo",
-    "custom-favicon"
+    "splitter"
   ],
   "pluginsConfig": {
     "theme-default": {
@@ -50,49 +42,16 @@
       "size": 2
     },
     "github": {
-      "url": "https://github.com/your-username/zhiweijz"
+      "url": "https://github.com/zj591227045/zhiweijz"
     },
     "edit-link": {
-      "base": "https://github.com/your-username/zhiweijz-docs/edit/main",
+      "base": "https://github.com/zj591227045/zhiweijz-docs/edit/main",
       "label": "编辑此页"
     },
     "prism": {
       "css": [
         "prismjs/themes/prism-tomorrow.css"
       ]
-    },
-    "tbfed-pagefooter": {
-      "copyright": "Copyright &copy; 2024 只为记账团队",
-      "modify_label": "最后修改时间：",
-      "modify_format": "YYYY-MM-DD HH:mm:ss"
-    },
-    "insert-logo": {
-      "url": "assets/logo.png",
-      "style": "background: none; max-height: 30px; min-height: 30px"
-    },
-    "custom-favicon": {
-      "favicon": "assets/favicon.ico"
-    },
-    "anchor-navigation-ex": {
-      "showLevel": false,
-      "associatedWithSummary": true,
-      "printLog": false,
-      "multipleH1": true,
-      "mode": "float",
-      "showGoTop": true,
-      "float": {
-        "floatIcon": "fa fa-navicon",
-        "showLevelIcon": false,
-        "level1Icon": "fa fa-hand-o-right",
-        "level2Icon": "fa fa-hand-o-right",
-        "level3Icon": "fa fa-hand-o-right"
-      },
-      "pageTop": {
-        "showLevelIcon": false,
-        "level1Icon": "fa fa-hand-o-right",
-        "level2Icon": "fa fa-hand-o-right",
-        "level3Icon": "fa fa-hand-o-right"
-      }
     }
   },
   "variables": {

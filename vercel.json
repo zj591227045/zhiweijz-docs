@@ -1,7 +1,12 @@
 {
   "version": 2,
-  "buildCommand": "npm run vercel-build",
-  "outputDirectory": "_book",
-  "installCommand": "npm install",
-  "framework": null
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "_book"
+      }
+    }
+  ]
 }
