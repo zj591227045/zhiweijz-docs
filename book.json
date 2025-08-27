@@ -1,0 +1,103 @@
+{
+  "title": "只为记账 - 用户文档",
+  "description": "智能家庭记账应用的完整用户文档",
+  "author": "只为记账团队",
+  "language": "zh-hans",
+  "gitbook": "3.2.3",
+  "root": ".",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "theme-default",
+    "search",
+    "lunr",
+    "sharing",
+    "fontsettings",
+    "highlight",
+    "livereload",
+    "copy-code-button",
+    "expandable-chapters",
+    "anchor-navigation-ex",
+    "github",
+    "edit-link",
+    "prism",
+    "splitter",
+    "tbfed-pagefooter",
+    "popup",
+    "insert-logo",
+    "custom-favicon"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
+    "sharing": {
+      "facebook": false,
+      "twitter": false,
+      "google": false,
+      "weibo": true,
+      "instapaper": false,
+      "vk": false,
+      "all": [
+        "facebook", "google", "twitter", "weibo", "instapaper"
+      ]
+    },
+    "fontsettings": {
+      "theme": "white",
+      "family": "sans",
+      "size": 2
+    },
+    "github": {
+      "url": "https://github.com/your-username/zhiweijz"
+    },
+    "edit-link": {
+      "base": "https://github.com/your-username/zhiweijz-docs/edit/main",
+      "label": "编辑此页"
+    },
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-tomorrow.css"
+      ]
+    },
+    "tbfed-pagefooter": {
+      "copyright": "Copyright &copy; 2024 只为记账团队",
+      "modify_label": "最后修改时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "insert-logo": {
+      "url": "assets/logo.png",
+      "style": "background: none; max-height: 30px; min-height: 30px"
+    },
+    "custom-favicon": {
+      "favicon": "assets/favicon.ico"
+    },
+    "anchor-navigation-ex": {
+      "showLevel": false,
+      "associatedWithSummary": true,
+      "printLog": false,
+      "multipleH1": true,
+      "mode": "float",
+      "showGoTop": true,
+      "float": {
+        "floatIcon": "fa fa-navicon",
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      },
+      "pageTop": {
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      }
+    }
+  },
+  "variables": {
+    "version": "1.8.x",
+    "website": "https://your-domain.com",
+    "support_email": "support@your-domain.com"
+  }
+}

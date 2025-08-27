@@ -1,45 +1,44 @@
 {
-    "name": "gitbook",
-    "version": "0.1.0",
-    "devDependencies": {
-        "@biomejs/biome": "^1.9.4",
-        "@changesets/cli": "^2.27.12",
-        "turbo": "^2.5.0",
-        "vercel": "^39.3.0"
-    },
-    "packageManager": "bun@1.2.15",
-    "overrides": {
-        "@codemirror/state": "6.4.1",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "esbuild": "0.24.2"
-    },
-    "private": true,
-    "scripts": {
-        "dev": "turbo run dev",
-        "build": "turbo run build",
-        "clean-deps": "rm -rf node_modules && rm -rf packages/*/node_modules",
-        "typecheck": "turbo run typecheck",
-        "format": "biome check --write ./",
-        "format:check": "biome check --diagnostic-level=error ./",
-        "unit": "turbo run unit",
-        "e2e": "turbo run e2e",
-        "e2e-customers": "turbo run e2e-customers",
-        "changeset": "changeset",
-        "changeset-version": "changeset version && bun run format",
-        "release": "turbo run release && changeset publish",
-        "download:env": "op read op://gitbook-x-dev/gitbook-open/.env.local >> .env.local",
-        "clean": "turbo run clean"
-    },
-    "workspaces": {
-        "packages": ["packages/*"],
-        "catalog": {
-            "@gitbook/api": "^0.136.0",
-            "bidc": "^0.0.2"
-        }
-    },
-    "patchedDependencies": {
-        "decode-named-character-reference@1.0.2": "patches/decode-named-character-reference@1.0.2.patch",
-        "@vercel/next@4.4.2": "patches/@vercel%2Fnext@4.4.2.patch"
-    }
+  "name": "zhiweijz-docs",
+  "version": "1.0.0",
+  "description": "只为记账用户文档",
+  "main": "index.js",
+  "scripts": {
+    "install": "gitbook install",
+    "serve": "gitbook serve",
+    "build": "gitbook build",
+    "deploy": "npm run build && gh-pages -d _book",
+    "pdf": "gitbook pdf . ./zhiweijz-docs.pdf",
+    "epub": "gitbook epub . ./zhiweijz-docs.epub",
+    "mobi": "gitbook mobi . ./zhiweijz-docs.mobi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/zhiweijz-docs.git"
+  },
+  "keywords": [
+    "记账",
+    "家庭财务",
+    "文档",
+    "gitbook"
+  ],
+  "author": "只为记账团队",
+  "license": "MIT",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2",
+    "gh-pages": "^3.2.3"
+  },
+  "dependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-copy-code-button": "^0.1.0",
+    "gitbook-plugin-custom-favicon": "^0.0.4",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-insert-logo": "^0.1.5",
+    "gitbook-plugin-popup": "^0.1.0",
+    "gitbook-plugin-prism": "^2.4.0",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1"
+  }
 }
