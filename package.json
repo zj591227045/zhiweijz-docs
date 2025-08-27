@@ -6,7 +6,8 @@
   "scripts": {
     "install": "gitbook install",
     "serve": "gitbook serve",
-    "build": "gitbook build",
+    "build": "npm install -g gitbook-cli && gitbook install && gitbook build",
+    "vercel-build": "npm install -g gitbook-cli && gitbook install && gitbook build",
     "deploy": "npm run build && gh-pages -d _book",
     "pdf": "gitbook pdf . ./zhiweijz-docs.pdf",
     "epub": "gitbook epub . ./zhiweijz-docs.epub",
